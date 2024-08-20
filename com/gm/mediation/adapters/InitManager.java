@@ -108,7 +108,6 @@ public class InitManager {
                 .appName(appName)
                 .appId(appId)
                 .useMediation(true) //使用聚合功能一定要打开此开关，否则不会请求聚合广告，默认这个值为false
-                .useTextureView(true) // 设置是否使用texture播放视频
                 .directDownloadNetworkType(download)
                 .customController(mGMPrivacyConfig == null ? new UserDataCustomController(privacyUserAgree, openPersonalizedAd) : getGMPrivacyConfig())
                 .data(getData())
